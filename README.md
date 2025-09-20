@@ -15,36 +15,25 @@ MySQL Connector/J (JDBC Driver)
 
 **Database Setup**
 
-Run the following SQL commands in MySQL:
+1.Run the following SQL commands in MySQL:
     ```bash
-    CREATE DATABASE testdb;
-    
-    USE testdb;
-    
-    CREATE TABLE users (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(100) NOT NULL,
-        email VARCHAR(100) NOT NULL UNIQUE
-    );
+        CREATE DATABASE testdb;
+        
+        USE testdb;
+        
+        CREATE TABLE users (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(100) NOT NULL,
+            email VARCHAR(100) NOT NULL UNIQUE
+        );
 
-JDBC Driver
+2.JDBC Driver
+ download the JAR and add it to your project’s classpath manually.
 
-Add MySQL Connector/J to your project:
-
-Maven dependency:
-
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.1.0</version>
-</dependency>
-
-
-Or download the JAR and add it to your project’s classpath manually.
-
-Project Structure
-src/
- └── JDBCExample.java
+**Project Structure**
+        ```bash
+        src/
+         └── JDBCExample.java
 
 How It Works
 
